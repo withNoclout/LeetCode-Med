@@ -1,0 +1,23 @@
+class Solution(object):
+    def gardenNoAdj(self, n, paths):
+        """
+        :type n: int
+        :type paths: List[List[int]]
+        :rtype: List[int]
+        """
+        graph = [[] for _ in range(n)]
+        for x, y in paths:
+            graph[x-1].append(y-1)
+            graph[y-1].append(x-1)
+        res = [0] * n
+        for i in range(n):
+            used = set()
+            for nei in graph[i]:
+                if res[nei]:
+                    used.add(res[nei])
+            for color in range(1, 5):
+                if color not in used:
+                    res[i] = color
+                    break
+        return res	
+
