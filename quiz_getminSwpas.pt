@@ -1,0 +1,38 @@
+class Solution(object):
+    def getMinSwaps(self, num, k):
+        """
+        :type num: str
+        :type k: int
+        :rtype: int
+        """
+        nums = list(num)
+
+        # Function to get next permutation
+        def next_perm(arr):
+            i = len(arr) - 2
+            while i >= 0 and arr[i] >= arr[i + 1]:
+                i -= 1
+            if i >= 0:
+                j = len(arr) - 1
+                while arr[j] <= arr[i]:
+                    j -= 1
+                arr[i], arr[j] = arr[j], arr[i]
+            arr[i + 1:] = reversed(arr[i + 1:])
+
+        target = nums[:]
+        for _ in range(k):
+            next_perm(target)
+
+        # Count minimum swaps to transform nums -> target
+        res = 0
+        nums = list(nums)
+        for i in range(len(nums)):
+            if nums[i] != target[i]:
+                j = i + 1
+                while nums[j] != target[i]:
+                    j += 1
+                while j > i:
+                    nums[j], nums[j - 1] = nums[j - 1], nums[j]
+                    j -= 1
+                    res += 1
+        return res
