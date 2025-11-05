@@ -1,0 +1,28 @@
+class Solution(object):
+    def sumGame(self, num):
+        """
+        :type num: str
+        :rtype: bool
+        """
+        n = len(num)
+        half = n // 2
+        left_sum = right_sum = left_q = right_q = 0
+
+        for i in range(half):
+            if num[i] == '?':
+                left_q += 1
+            else:
+                left_sum += int(num[i])
+
+        for i in range(half, n):
+            if num[i] == '?':
+                right_q += 1
+            else:
+                right_sum += int(num[i])
+
+        diff_sum = left_sum - right_sum
+        diff_q = left_q - right_q
+
+        # Each '?' can change by up to 9
+        # If the total potential adjustment can't balance perfectly, Alice wins
+        return (diff_sum * 2 != 9 * diff_q)
