@@ -1,0 +1,14 @@
+class Solution(object):
+    def canMakeSubsequence(self, str1, str2):
+        i, j = 0, 0
+        n, m = len(str1), len(str2)
+        
+        while i < n and j < m:
+            c1 = ord(str1[i]) - ord('a')
+            c2 = ord(str2[j]) - ord('a')
+            
+            if c1 == c2 or (c1 + 1) % 26 == c2:
+                j += 1
+            i += 1
+            
+        return j == m
