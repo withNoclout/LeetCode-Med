@@ -35,7 +35,16 @@ ROOT = Path(__file__).resolve().parents[1]
 CHECKED_DIR = ROOT / "checked"
 STATE_FILE = Path(__file__).resolve().parents[0] / "state.json"
 METADATA_FILE = CHECKED_DIR / "metadata.json"
+ENV_FILE = Path(__file__).resolve().parents[0] / ".env"
 INTERVAL_HOURS = 12
+
+
+def load_env():
+    if ENV_FILE.exists():
+        for line in ENV_FILE.read_text().splitlines():
+            if "=" in line and not line.startswith("#"):
+                key, value = line.split("=", 1)
+                os.environ[key.strip()] = value.strip()
 
 
 def load_state():
@@ -103,10 +112,27 @@ def check_name_vs_methods(filename: str, methods: list[str]) -> bool:
 def call_deepseek(api_url: str, api_key: str, filename: str, content: str) -> dict:
     if requests is None:
         return {"error": "requests library not installed"}
-    headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
-    payload = {"filename": filename, "content": content}
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    } if api_key else {}
+    
+    payload = {
+        "model": "deepseek-chat",
+        "messages": [
+            {
+                "role": "system", 
+                "content": "You are a LeetCode solution validator. Analyze the provided Python code and filename. Check if the filename matches the problem and if the solution is correct. Return a brief JSON-like summary."
+            },
+            {
+                "role": "user", 
+                "content": f"Filename: {filename}\n\nCode:\n{content}"
+            }
+        ]
+    }
+    
     try:
-        resp = requests.post(api_url, json=payload, headers=headers, timeout=30)
+        resp = requests.post(api_url, json=payload, headers=headers, timeout=60)
         try:
             return resp.json()
         except Exception:
@@ -198,6 +224,7 @@ def perform_check(run_once=True):
 
 
 def main():
+    load_env()
     parser = argparse.ArgumentParser()
     parser.add_argument("--daemon", action="store_true", help="Run continuously, sleeping 12 hours between checks")
     args = parser.parse_args()
