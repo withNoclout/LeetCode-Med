@@ -22,5 +22,8 @@ git config --global log.date local
 ```
 
 **For more information:**
-- See [GIT_TIMEZONE_GUIDE.md](GIT_TIMEZONE_GUIDE.md) for detailed explanations
-- Run `./git-timezone-helper.sh` to view your commits in different timezones
+- 📖 [TIMEZONE_QUICKREF.md](TIMEZONE_QUICKREF.md) - Quick reference for common timezone issues
+- 📚 [GIT_TIMEZONE_GUIDE.md](GIT_TIMEZONE_GUIDE.md) - Comprehensive guide to Git timezones
+- 🌍 [MIDNIGHT_COMMIT_EXAMPLE.md](MIDNIGHT_COMMIT_EXAMPLE.md) - Real-world example explaining the midnight issue
+- 🔧 Run `./git-timezone-helper.sh` to view your commits in different timezones
+- ⚙️ See [.gitconfig.example](.gitconfig.example) for recommended Git configuration
