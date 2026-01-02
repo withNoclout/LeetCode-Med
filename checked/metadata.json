@@ -1,5 +1,42 @@
 [
   {
+    "original": "quiz_117_conectpopulation.py",
+    "moved_to": "checked/quiz_117_conectpopulation.py",
+    "checked_at": "2026-01-02T18:43:37.851116",
+    "methods": [
+      "connect"
+    ],
+    "name_ok": false,
+    "deepseek": {
+      "id": "69c8f69c-2091-42cf-9b21-87082c478688",
+      "object": "chat.completion",
+      "created": 1767379417,
+      "model": "deepseek-chat",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"filename_correctness\": \"incorrect\",\n  \"filename_expected\": \"connect_population_next_right_pointers_in_each_node_ii.py or similar\",\n  \"solution_correctness\": \"correct\",\n  \"time_complexity\": \"O(n)\",\n  \"space_complexity\": \"O(1)\",\n  \"notes\": \"The algorithm correctly connects each node's next pointer to its right neighbor in the same level using level-order traversal without extra queue space. However, the filename 'quiz_117_conectpopulation.py' is misspelled and does not match standard naming conventions for LeetCode problem 117.\"\n}"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 235,
+        "completion_tokens": 132,
+        "total_tokens": 367,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 235
+      },
+      "system_fingerprint": "fp_eaab8d114b_prod0820_fp8_kvcache"
+    }
+  },
+  {
     "original": "quiz_114_flatternBinaryLinklist.py",
     "moved_to": "checked/quiz_114_flatternBinaryLinklist.py",
     "checked_at": "2026-01-02T18:41:44.620861",
