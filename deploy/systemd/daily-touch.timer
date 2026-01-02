@@ -1,0 +1,9 @@
+[Unit]
+Description=Run LeetCode-Med daily touch every day at 00:05
+
+[Timer]
+OnCalendar=*-*-* 00:05:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=LeetCode-Med daily touch commit
+After=network.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/noclout/LeetCode-Med
+ExecStart=/usr/bin/env bash -lc 'python3 deploy/daily/daily_touch.py'
+User=noclout
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
