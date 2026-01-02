@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Git Timezone Helper Script
 # This script helps you view git commits in different timezones

@@ -54,8 +54,8 @@ Jan 2 ───── 8:00 AM ─── 8:01 AM ── ... (UTC)
 
 When you commit at **11:30 PM local time**, here's what time it is in UTC:
 
-| Timezone | Local Time | UTC Time (Next Day!) |
-|----------|------------|---------------------|
+| Timezone | Local Time | UTC Equivalent |
+|----------|------------|----------------|
 | PST (UTC-8) | Jan 1, 11:30 PM | Jan 2, 7:30 AM |
 | MST (UTC-7) | Jan 1, 11:30 PM | Jan 2, 6:30 AM |
 | CST (UTC-6) | Jan 1, 11:30 PM | Jan 2, 5:30 AM |

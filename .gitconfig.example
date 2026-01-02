@@ -26,7 +26,7 @@
     today = log --since='midnight' --date=local --format='%h %ad %s'
     
     # Show commits from a specific date (use like: git on-date 2024-01-15)
-    on-date = "!f() { git log --after=\"$1 00:00\" --before=\"$1 23:59\" --date=local; }; f"
+    on-date = "!f() { git log --after=\"$1 00:00\" --before=\"$1 23:59:59\" --date=local; }; f"
 
 [format]
     # Set default pretty format to include timezone

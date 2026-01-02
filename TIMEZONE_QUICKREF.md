@@ -62,10 +62,10 @@ echo $TZ
 ```
 
 ## Important Notes
-- ✅ Changing display settings only affects how times are SHOWN
-- ✅ The actual commit timestamp never changes
-- ✅ All timezone information is preserved in commits
-- ❌ You cannot "fix" old commit timestamps without rewriting history
+- [YES] Changing display settings only affects how times are SHOWN
+- [YES] The actual commit timestamp never changes
+- [YES] All timezone information is preserved in commits
+- [NO] You cannot "fix" old commit timestamps without rewriting history
 
 ## Need More Help?
 See [GIT_TIMEZONE_GUIDE.md](GIT_TIMEZONE_GUIDE.md) for detailed information.
