@@ -1,0 +1,5 @@
+# Run checker every 12 hours via cron. Edit the path to python/working dir as needed.
+# Example crontab line (add with `crontab -e`):
+
+# At minute 0 every 12th hour
+0 */12 * * * cd /home/noclout/LeetCode-Med && /usr/bin/python3 checker/checker.py >> /var/log/leetcode_checker.log 2>&1
