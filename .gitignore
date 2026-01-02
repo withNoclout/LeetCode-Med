@@ -1,0 +1,9 @@
+# Ignore local env files for the checker service
+/checker/.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS files
+.DS_Store
