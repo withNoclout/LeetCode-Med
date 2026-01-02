@@ -1,5 +1,15 @@
 [
   {
+    "original": "Quiz_minabsoluteSumdiff.py",
+    "moved_to": "checked/Quiz_minabsoluteSumdiff.py",
+    "checked_at": "2026-01-02T18:33:33.287911",
+    "methods": [
+      "minAbsoluteSumDiff"
+    ],
+    "name_ok": false,
+    "deepseek": null
+  },
+  {
     "original": "Quiz_01_lasttimeCachBus.py",
     "moved_to": "checked/Quiz_01_lasttimeCachBus.py",
     "checked_at": "2026-01-02T18:17:55.801370",
