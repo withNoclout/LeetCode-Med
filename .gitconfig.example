@@ -1,0 +1,48 @@
+# Example Git Configuration for Timezone Handling
+# Copy these settings to your ~/.gitconfig or use git config commands
+
+[log]
+    # Display dates in local timezone
+    date = local
+    # Alternative: use iso-local to see timezone offsets
+    # date = iso-local
+
+[alias]
+    # Convenient aliases for viewing logs with timezone info
+    
+    # Show logs in local timezone
+    llog = log --date=local
+    
+    # Show logs with ISO format and timezone
+    logtz = log --date=iso --format='%C(yellow)%h%Creset %C(cyan)%ad%Creset %s'
+    
+    # Show last 10 commits in local time
+    recent = log -10 --date=local --format='%h %ad %s'
+    
+    # Show commit with full timezone information
+    showfull = show --format=fuller
+    
+    # Show today's commits in local timezone
+    today = log --since='midnight' --date=local --format='%h %ad %s'
+    
+    # Show commits from a specific date (use like: git on-date 2024-01-15)
+    on-date = "!f() { git log --after=\"$1 00:00\" --before=\"$1 23:59\" --date=local; }; f"
+
+[format]
+    # Set default pretty format to include timezone
+    pretty = format:%C(yellow)%h%Creset %C(cyan)%ad%Creset %C(green)(%ar)%Creset %s
+
+[user]
+    # Make sure to set your name and email
+    # name = Your Name
+    # email = your.email@example.com
+
+# Note: To apply these settings globally, use:
+#   git config --global log.date local
+#   git config --global alias.llog "log --date=local"
+# etc.
+
+# To apply to current repository only, use:
+#   git config log.date local
+#   git config alias.llog "log --date=local"
+# etc.
