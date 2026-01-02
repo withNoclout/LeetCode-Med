@@ -1,5 +1,17 @@
 [
   {
+    "original": "quiz_114_flatternBinaryLinklist.py",
+    "moved_to": "checked/quiz_114_flatternBinaryLinklist.py",
+    "checked_at": "2026-01-02T18:41:44.620861",
+    "methods": [
+      "flatten"
+    ],
+    "name_ok": false,
+    "deepseek": {
+      "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out."
+    }
+  },
+  {
     "original": "Quiz_minabsoluteSumdiff.py",
     "moved_to": "checked/Quiz_minabsoluteSumdiff.py",
     "checked_at": "2026-01-02T18:33:33.287911",

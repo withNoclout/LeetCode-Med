@@ -1,11 +1,14 @@
 {
-  "next_index": 2,
+  "next_index": 3,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
     },
     "Quiz_minabsoluteSumdiff.py": {
       "last_checked": "2026-01-02T18:33:33.287911"
+    },
+    "quiz_114_flatternBinaryLinklist.py": {
+      "last_checked": "2026-01-02T18:41:44.620861"
     }
   }
 }
