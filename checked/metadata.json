@@ -1,5 +1,42 @@
 [
   {
+    "original": "quiz_120_triangle.py",
+    "moved_to": "checked/quiz_120_triangle.py",
+    "checked_at": "2026-01-03T18:12:52.750670",
+    "methods": [
+      "minimumTotal"
+    ],
+    "name_ok": false,
+    "deepseek": {
+      "id": "dbf654a6-1ecd-418b-b164-f1d035640b63",
+      "object": "chat.completion",
+      "created": 1767463972,
+      "model": "deepseek-chat",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"filename_check\": true,\n  \"solution_correct\": true,\n  \"time_complexity\": \"O(n^2)\",\n  \"space_complexity\": \"O(1) (in-place modification)\",\n  \"notes\": \"Uses bottom-up dynamic programming to compute minimum path sum efficiently.\"\n}"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 150,
+        "completion_tokens": 65,
+        "total_tokens": 215,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 150
+      },
+      "system_fingerprint": "fp_eaab8d114b_prod0820_fp8_kvcache"
+    }
+  },
+  {
     "original": "quiz_117_conectpopulation.py",
     "moved_to": "checked/quiz_117_conectpopulation.py",
     "checked_at": "2026-01-02T18:43:37.851116",
