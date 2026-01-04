@@ -1,5 +1,42 @@
 [
   {
+    "original": "quiz_128_lngestConcecutiveseQuence.py",
+    "moved_to": "checked/quiz_128_lngestConcecutiveseQuence.py",
+    "checked_at": "2026-01-04T08:36:33.303168",
+    "methods": [
+      "longestConsecutive"
+    ],
+    "name_ok": false,
+    "deepseek": {
+      "id": "acefd970-ef7c-4369-aa3d-d9c6e745974c",
+      "object": "chat.completion",
+      "created": 1767515793,
+      "model": "deepseek-chat",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"filename_correctness\": \"Partial\",\n  \"filename_issues\": \"Typo in filename: 'lngestConcecutiveseQuence.py' should be 'longestConsecutiveSequence.py' or similar. The problem is LeetCode 128: Longest Consecutive Sequence.\",\n  \"solution_correctness\": \"Correct\",\n  \"time_complexity\": \"O(n)\",\n  \"space_complexity\": \"O(n)\",\n  \"notes\": \"The solution efficiently uses a set to check for consecutive elements, starting sequences only from numbers that are the start of a sequence (i.e., num-1 not in set). This avoids redundant work and meets the O(n) requirement.\"\n}"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 162,
+        "completion_tokens": 150,
+        "total_tokens": 312,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 162
+      },
+      "system_fingerprint": "fp_eaab8d114b_prod0820_fp8_kvcache"
+    }
+  },
+  {
     "original": "quiz_120_triangle.py",
     "moved_to": "checked/quiz_120_triangle.py",
     "checked_at": "2026-01-03T18:12:52.750670",
