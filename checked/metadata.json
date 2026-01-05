@@ -1,5 +1,42 @@
 [
   {
+    "original": "quiz_137_singlenumber.py",
+    "moved_to": "checked/quiz_137_singlenumber.py",
+    "checked_at": "2026-01-05T17:44:41.732441",
+    "methods": [
+      "singleNumber"
+    ],
+    "name_ok": false,
+    "deepseek": {
+      "id": "0b7a7dc0-0817-4629-90c7-47c5c63ed6bc",
+      "object": "chat.completion",
+      "created": 1767635081,
+      "model": "deepseek-chat",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"filename_check\": \"Pass\",\n  \"solution_correctness\": \"Pass\",\n  \"summary\": \"The filename matches the problem (Single Number II, LeetCode 137). The solution uses bitwise operations to track numbers appearing once and twice, correctly identifying the single number that appears exactly once while others appear three times.\"\n}"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 133,
+        "completion_tokens": 69,
+        "total_tokens": 202,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 133
+      },
+      "system_fingerprint": "fp_eaab8d114b_prod0820_fp8_kvcache"
+    }
+  },
+  {
     "original": "quiz_130_surroundRegion.py",
     "moved_to": "checked/quiz_130_surroundRegion.py",
     "checked_at": "2026-01-05T02:08:29.940111",
