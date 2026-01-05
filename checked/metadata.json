@@ -1,5 +1,42 @@
 [
   {
+    "original": "quiz_130_surroundRegion.py",
+    "moved_to": "checked/quiz_130_surroundRegion.py",
+    "checked_at": "2026-01-05T02:08:29.940111",
+    "methods": [
+      "solve"
+    ],
+    "name_ok": false,
+    "deepseek": {
+      "id": "9219fd71-9474-48a6-b710-aaf3b8a032e3",
+      "object": "chat.completion",
+      "created": 1767578910,
+      "model": "deepseek-chat",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"filename_check\": \"Partial match. Expected 'surrounded_regions.py' or similar, but 'quiz_130_surroundRegion.py' is acceptable if it refers to LeetCode problem 130.\",\n  \"solution_correctness\": \"Incorrect. The code has a critical bug: it marks border-connected 'O's as '1', but later checks for 'E' (which never gets set) instead of '1' to revert them back to 'O'. This will incorrectly flip all 'O's to 'X' and not restore the border-connected ones.\",\n  \"summary\": \"The solution attempts a DFS from borders to mark safe 'O's, but uses inconsistent markers ('1' and 'E'), leading to incorrect output. It should mark safe 'O's as a temporary marker (like 'T'), then flip all remaining 'O's to 'X', and finally revert 'T' back to 'O'.\"\n}"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 343,
+        "completion_tokens": 194,
+        "total_tokens": 537,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 343
+      },
+      "system_fingerprint": "fp_eaab8d114b_prod0820_fp8_kvcache"
+    }
+  },
+  {
     "original": "quiz_128_lngestConcecutiveseQuence.py",
     "moved_to": "checked/quiz_128_lngestConcecutiveseQuence.py",
     "checked_at": "2026-01-04T08:36:33.303168",
