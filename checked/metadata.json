@@ -1,5 +1,42 @@
 [
   {
+    "original": "quiz_139_wordBreak.py",
+    "moved_to": "checked/quiz_139_wordBreak.py",
+    "checked_at": "2026-01-06T17:03:36.130748",
+    "methods": [
+      "wordBreak"
+    ],
+    "name_ok": false,
+    "deepseek": {
+      "id": "08539295-c8b9-4b97-b433-dd68bf0503c8",
+      "object": "chat.completion",
+      "created": 1767719016,
+      "model": "deepseek-chat",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"filename_check\": \"Pass\",\n  \"solution_correctness\": \"Pass\",\n  \"summary\": \"The filename matches the LeetCode problem 139 (Word Break). The solution uses dynamic programming with a boolean DP array where dp[i] indicates if the substring s[0:i] can be segmented. It correctly initializes dp[0] as true and iterates through all possible substrings, checking if a valid segmentation exists. The algorithm runs in O(n^2) time (with substring hashing) and O(n) space, which is acceptable for typical constraints. The code is correct and passes the problem requirements.\"\n}"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 184,
+        "completion_tokens": 130,
+        "total_tokens": 314,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 184
+      },
+      "system_fingerprint": "fp_eaab8d114b_prod0820_fp8_kvcache"
+    }
+  },
+  {
     "original": "quiz_137_singlenumber.py",
     "moved_to": "checked/quiz_137_singlenumber.py",
     "checked_at": "2026-01-05T17:44:41.732441",
