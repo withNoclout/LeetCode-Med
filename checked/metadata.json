@@ -1,5 +1,40 @@
 [
   {
+    "original": "quiz_155_minStack.py",
+    "moved_to": "checked/quiz_155_minStack.py",
+    "checked_at": "2026-01-07T13:09:10.503478",
+    "methods": [],
+    "name_ok": false,
+    "deepseek": {
+      "id": "f65942f8-d90b-4557-87ad-621135d116c2",
+      "object": "chat.completion",
+      "created": 1767791350,
+      "model": "deepseek-chat",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"filename_correct\": true,\n  \"solution_correct\": true,\n  \"time_complexity\": \"O(1) for all operations\",\n  \"space_complexity\": \"O(n)\",\n  \"notes\": \"Uses auxiliary stack to track minimums efficiently. Handles duplicates correctly with <= comparison in push.\"\n}"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 162,
+        "completion_tokens": 70,
+        "total_tokens": 232,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 162
+      },
+      "system_fingerprint": "fp_eaab8d114b_prod0820_fp8_kvcache"
+    }
+  },
+  {
     "original": "quiz_139_wordBreak.py",
     "moved_to": "checked/quiz_139_wordBreak.py",
     "checked_at": "2026-01-06T17:03:36.130748",
