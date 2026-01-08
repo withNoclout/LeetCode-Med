@@ -1,5 +1,5 @@
 {
-  "next_index": 10,
+  "next_index": 11,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -30,6 +30,9 @@
     },
     "quiz_155_minStack.py": {
       "last_checked": "2026-01-07T13:09:10.503478"
+    },
+    "quiz_17_lettercombination.py": {
+      "last_checked": "2026-01-08T13:33:51.494808"
     }
   }
 }

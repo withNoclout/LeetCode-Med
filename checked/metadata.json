@@ -1,5 +1,25 @@
 [
   {
+    "original": "quiz_17_lettercombination.py",
+    "moved_to": "checked/quiz_17_lettercombination.py",
+    "checked_at": "2026-01-08T13:33:51.494808",
+    "methods": [
+      "letterCombinations"
+    ],
+    "name_ok": false,
+    "validation": {
+      "filename_valid": true,
+      "has_solution_class": true,
+      "method_names_match": false,
+      "has_docstrings": true,
+      "has_type_hints": false,
+      "code_length_ok": true,
+      "issues": [
+        "Method names don't match filename. Methods: ['letterCombinations']"
+      ]
+    }
+  },
+  {
     "original": "quiz_155_minStack.py",
     "moved_to": "checked/quiz_155_minStack.py",
     "checked_at": "2026-01-07T13:09:10.503478",
