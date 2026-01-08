@@ -1,5 +1,23 @@
 [
   {
+    "original": "quiz_19_remove_NTHNodefromeditandoflist.py",
+    "moved_to": "checked/quiz_19_remove_NTHNodefromeditandoflist.py",
+    "checked_at": "2026-01-08T16:31:57.088947",
+    "methods": [
+      "removeNthFromEnd"
+    ],
+    "name_ok": true,
+    "validation": {
+      "filename_valid": true,
+      "has_solution_class": true,
+      "method_names_match": true,
+      "has_docstrings": false,
+      "has_type_hints": true,
+      "code_length_ok": true,
+      "issues": []
+    }
+  },
+  {
     "original": "quiz_17_lettercombination.py",
     "moved_to": "checked/quiz_17_lettercombination.py",
     "checked_at": "2026-01-08T13:33:51.494808",
