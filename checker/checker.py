@@ -6,9 +6,10 @@ Usage:
   - Run once: `python checker.py`
   - Run as daemon: `python checker.py --daemon` (checks one file every 12 hours)
 
-Configuration (via env vars):
-  - DEEPSEEK_URL: URL to call deepseek verification endpoint (optional)
-  - DEEPSEEK_API_KEY: API key for deepseek (optional)
+Validation:
+  - Uses local validation function (no external APIs required)
+  - Checks filename format, Solution class structure, method naming conventions
+  - Validates code syntax and structure
 
 The script will create/maintain `checker/state.json` and `checked/metadata.json`.
 """
@@ -25,11 +26,6 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import re
 import ast
-
-try:
-    import requests
-except Exception:
-    requests = None
 
 ROOT = Path(__file__).resolve().parents[1]
 CHECKED_DIR = ROOT / "checked"
@@ -109,36 +105,75 @@ def check_name_vs_methods(filename: str, methods: list[str]) -> bool:
     return False
 
 
-def call_deepseek(api_url: str, api_key: str, filename: str, content: str) -> dict:
-    if requests is None:
-        return {"error": "requests library not installed"}
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json"
-    } if api_key else {}
-    
-    payload = {
-        "model": "deepseek-chat",
-        "messages": [
-            {
-                "role": "system", 
-                "content": "You are a LeetCode solution validator. Analyze the provided Python code and filename. Check if the filename matches the problem and if the solution is correct. Return a brief JSON-like summary."
-            },
-            {
-                "role": "user", 
-                "content": f"Filename: {filename}\n\nCode:\n{content}"
-            }
-        ]
+def validate_solution_local(filename: str, content: str) -> dict:
+    """
+    Local validation function that checks LeetCode solutions without external APIs.
+    Validates:
+    - Filename format (Quiz_XX_funcname.py)
+    - Solution class exists
+    - Method names match filename conventions
+    - Code structure and syntax
+    """
+    result = {
+        "filename_valid": False,
+        "has_solution_class": False,
+        "method_names_match": False,
+        "has_docstrings": False,
+        "has_type_hints": False,
+        "code_length_ok": False,
+        "issues": []
     }
     
     try:
-        resp = requests.post(api_url, json=payload, headers=headers, timeout=60)
-        try:
-            return resp.json()
-        except Exception:
-            return {"status_code": resp.status_code, "text": resp.text}
-    except Exception as e:
-        return {"error": str(e)}
+        tree = ast.parse(content)
+    except SyntaxError as e:
+        result["issues"].append(f"Syntax Error: {str(e)}")
+        return result
+    
+    # Check filename format
+    if re.match(r"Quiz_\d+_.+\.py", filename, re.IGNORECASE) or re.match(r"quiz_.+\.py", filename, re.IGNORECASE):
+        result["filename_valid"] = True
+    else:
+        result["issues"].append(f"Invalid filename format: {filename}")
+    
+    # Check for Solution class
+    solution_class = None
+    for node in ast.walk(tree):
+        if isinstance(node, ast.ClassDef) and node.name == "Solution":
+            solution_class = node
+            result["has_solution_class"] = True
+            break
+    
+    if not solution_class:
+        result["issues"].append("No 'Solution' class found")
+        return result
+    
+    # Get methods from Solution class
+    methods = []
+    for item in solution_class.body:
+        if isinstance(item, ast.FunctionDef) and not item.name.startswith("_"):
+            methods.append(item.name)
+            # Check for docstring
+            if ast.get_docstring(item):
+                result["has_docstrings"] = True
+            # Check for type hints
+            if item.returns or any(arg.annotation for arg in item.args.args):
+                result["has_type_hints"] = True
+    
+    # Check if method names match filename
+    if check_name_vs_methods(filename, methods):
+        result["method_names_match"] = True
+    else:
+        result["issues"].append(f"Method names don't match filename. Methods: {methods}")
+    
+    # Check code length (should not be too short or too long for typical LeetCode)
+    lines = content.count('\n')
+    if 5 < lines < 500:  # Reasonable bounds for LeetCode solution
+        result["code_length_ok"] = True
+    else:
+        result["issues"].append(f"Code length unusual: {lines} lines")
+    
+    return result
 
 
 def commit_and_push(files: list[Path], message: str) -> dict:
@@ -187,40 +222,63 @@ def perform_check(run_once=True):
     name_ok = check_name_vs_methods(chosen.name, methods)
     content = chosen.read_text()
 
-    deepseek_url = os.environ.get("DEEPSEEK_URL")
-    deepseek_key = os.environ.get("DEEPSEEK_API_KEY")
-    deepseek_result = None
-    if deepseek_url:
-        deepseek_result = call_deepseek(deepseek_url, deepseek_key or "", chosen.name, content)
+    # Use local validation instead of external API
+    validation_result = validate_solution_local(chosen.name, content)
 
-    # prepare checked dir
-    CHECKED_DIR.mkdir(exist_ok=True)
-    dest = CHECKED_DIR / chosen.name
-    shutil.move(str(chosen), str(dest))
+    # Determine if file should be moved (only if validation passed)
+    is_valid = (
+        validation_result.get("filename_valid", False) and
+        validation_result.get("has_solution_class", False) and
+        validation_result.get("code_length_ok", False) and
+        name_ok and
+        len(validation_result.get("issues", [])) == 0
+    )
 
-    # record metadata
-    METADATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    metadata = METADATA_FILE.exists() and json.loads(METADATA_FILE.read_text()) or []
-    entry = {
-        "original": str(chosen.name),
-        "moved_to": str(dest.relative_to(ROOT)),
-        "checked_at": now.isoformat(),
-        "methods": methods,
-        "name_ok": name_ok,
-        "deepseek": deepseek_result,
-    }
-    metadata.insert(0, entry)
-    METADATA_FILE.write_text(json.dumps(metadata, indent=2))
+    if is_valid:
+        # prepare checked dir
+        CHECKED_DIR.mkdir(exist_ok=True)
+        dest = CHECKED_DIR / chosen.name
+        shutil.move(str(chosen), str(dest))
+        
+        # record metadata
+        METADATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+        metadata = METADATA_FILE.exists() and json.loads(METADATA_FILE.read_text()) or []
+        entry = {
+            "original": str(chosen.name),
+            "moved_to": str(dest.relative_to(ROOT)),
+            "checked_at": now.isoformat(),
+            "methods": methods,
+            "name_ok": name_ok,
+            "validation": validation_result,
+            "status": "PASSED"
+        }
+        metadata.insert(0, entry)
+        METADATA_FILE.write_text(json.dumps(metadata, indent=2))
 
-    # update state
-    state.setdefault("files", {})[chosen.name] = {"last_checked": now.isoformat()}
-    state["next_index"] = (idx + 1) % len(files)
-    save_state(state)
+        # update state
+        state.setdefault("files", {})[chosen.name] = {"last_checked": now.isoformat()}
+        state["next_index"] = (idx + 1) % len(files)
+        save_state(state)
 
-    # commit changes
-    commit_msg = f"checker: validated {chosen.name} (name_ok={name_ok})"
-    commit_res = commit_and_push([METADATA_FILE, STATE_FILE, dest], commit_msg)
-    print("Commit result:", commit_res)
+        # commit changes
+        commit_msg = f"checker: validated {chosen.name} (PASSED)"
+        commit_res = commit_and_push([METADATA_FILE, STATE_FILE, dest], commit_msg)
+        print(f"✓ PASSED - File moved to checked/")
+        print("Commit result:", commit_res)
+    else:
+        # File failed validation - skip it, don't move
+        print(f"✗ FAILED - File skipped (not moved)")
+        print(f"  Issues: {validation_result.get('issues', [])}")
+        
+        # Still update state to mark as checked but failed
+        state.setdefault("files", {})[chosen.name] = {
+            "last_checked": now.isoformat(),
+            "status": "FAILED",
+            "issues": validation_result.get("issues", [])
+        }
+        state["next_index"] = (idx + 1) % len(files)
+        save_state(state)
+        print(f"  (Will retry this file in {INTERVAL_HOURS} hours)")
 
 
 def main():

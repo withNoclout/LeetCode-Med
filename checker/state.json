@@ -1,5 +1,5 @@
 {
-  "next_index": 12,
+  "next_index": 15,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -36,6 +36,27 @@
     },
     "quiz_19_remove_NTHNodefromeditandoflist.py": {
       "last_checked": "2026-01-08T16:31:57.088947"
+    },
+    "quiz_208_implementTries.py": {
+      "last_checked": "2026-01-08T18:59:30.589096",
+      "status": "FAILED",
+      "issues": [
+        "No 'Solution' class found"
+      ]
+    },
+    "quiz_2106_maxfruitCatch.py": {
+      "last_checked": "2026-01-09T01:34:11.494724",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['maxTotalFruits', 'minSteps']"
+      ]
+    },
+    "quiz_210_courseSchedule2.py": {
+      "last_checked": "2026-01-09T14:18:05.720704",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['findOrder']"
+      ]
     }
   }
 }
