@@ -1,5 +1,5 @@
 {
-  "next_index": 15,
+  "next_index": 17,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -56,6 +56,20 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['findOrder']"
+      ]
+    },
+    "quiz_211_DesignandSearchWordDatabase.py": {
+      "last_checked": "2026-01-10T10:41:27.131725",
+      "status": "FAILED",
+      "issues": [
+        "No 'Solution' class found"
+      ]
+    },
+    "quiz_216_combinationofsum3.py": {
+      "last_checked": "2026-01-11T00:15:00.587015",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['combinationSum3']"
       ]
     }
   }
