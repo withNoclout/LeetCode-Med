@@ -1,4 +1,32 @@
 class Solution(object):
+    def gcd(self, a, b):
+        while b:
+            a, b = b, a % b
+        return a
+
+    def maxDistance(self, s, k):
+        """
+        :type s: str
+        :type k: int
+        :rtype: int
+        """
+        ans = 0
+        # Iterate through all 4 target diagonal directions (NE, NW, SE, SW)
+        for dirs in ["NE", "NW", "SE", "SW"]:
+            curr_dist = 0
+            bad_moves = 0
+            for char in s:
+                if char in dirs:
+                    curr_dist += 1
+                else:
+                    curr_dist -= 1
+                    bad_moves += 1
+                
+                # Calculate max possible distance at this step with up to k changes
+                # Formula: (Good - Bad) + 2 * min(k, Bad)
+                ans = max(ans, curr_dist + 2 * min(k, bad_moves))
+        
+        return ansclass Solution(object):
     def maxDistinctElements(self, nums, k):
         """
         :type nums: List[int]
