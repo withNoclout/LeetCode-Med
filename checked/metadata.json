@@ -1,5 +1,24 @@
 [
   {
+    "original": "quiz_22_generate_parenthesis.py",
+    "moved_to": "checked/quiz_22_generate_parenthesis.py",
+    "checked_at": "2026-01-14T17:04:00.546500",
+    "methods": [
+      "generateParenthesis"
+    ],
+    "name_ok": true,
+    "validation": {
+      "filename_valid": true,
+      "has_solution_class": true,
+      "method_names_match": true,
+      "has_docstrings": true,
+      "has_type_hints": false,
+      "code_length_ok": true,
+      "issues": []
+    },
+    "status": "PASSED"
+  },
+  {
     "original": "quiz_19_remove_NTHNodefromeditandoflist.py",
     "moved_to": "checked/quiz_19_remove_NTHNodefromeditandoflist.py",
     "checked_at": "2026-01-08T16:31:57.088947",
