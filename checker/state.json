@@ -1,5 +1,5 @@
 {
-  "next_index": 21,
+  "next_index": 22,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -95,6 +95,13 @@
     },
     "quiz_22_generate_parenthesis.py": {
       "last_checked": "2026-01-14T17:04:00.546500"
+    },
+    "quiz_238_Productexceptitself.py": {
+      "last_checked": "2026-01-15T05:04:10.558856",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['productExceptSelf']"
+      ]
     }
   }
 }
