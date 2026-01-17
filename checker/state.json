@@ -1,5 +1,5 @@
 {
-  "next_index": 22,
+  "next_index": 25,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -101,6 +101,27 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['productExceptSelf']"
+      ]
+    },
+    "quiz_2419_longestSubarray.py": {
+      "last_checked": "2026-01-15T23:29:00.806243",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['longestSubarray']"
+      ]
+    },
+    "quiz_2419_longestsubarray.py": {
+      "last_checked": "2026-01-16T11:29:04.196535",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['longestSubarray']"
+      ]
+    },
+    "quiz_2471.py": {
+      "last_checked": "2026-01-16T23:29:19.863210",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['minimumOperations']"
       ]
     }
   }
