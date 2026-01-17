@@ -1,5 +1,5 @@
 {
-  "next_index": 25,
+  "next_index": 26,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -123,6 +123,9 @@
       "issues": [
         "Method names don't match filename. Methods: ['minimumOperations']"
       ]
+    },
+    "quiz_24_swap_nodeinpairs.py": {
+      "last_checked": "2026-01-17T08:46:34.890962"
     }
   }
 }
