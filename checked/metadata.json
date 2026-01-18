@@ -1,5 +1,24 @@
 [
   {
+    "original": "quiz_2845_count_interestingSubarray.py",
+    "moved_to": "checked/quiz_2845_count_interestingSubarray.py",
+    "checked_at": "2026-01-18T08:38:09.783650",
+    "methods": [
+      "countInterestingSubarrays"
+    ],
+    "name_ok": true,
+    "validation": {
+      "filename_valid": true,
+      "has_solution_class": true,
+      "method_names_match": true,
+      "has_docstrings": false,
+      "has_type_hints": false,
+      "code_length_ok": true,
+      "issues": []
+    },
+    "status": "PASSED"
+  },
+  {
     "original": "quiz_24_swap_nodeinpairs.py",
     "moved_to": "checked/quiz_24_swap_nodeinpairs.py",
     "checked_at": "2026-01-17T08:46:34.890962",

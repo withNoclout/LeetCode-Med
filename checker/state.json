@@ -1,5 +1,5 @@
 {
-  "next_index": 26,
+  "next_index": 30,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -126,6 +126,30 @@
     },
     "quiz_24_swap_nodeinpairs.py": {
       "last_checked": "2026-01-17T08:46:34.890962"
+    },
+    "quiz_260_singlenumber.py": {
+      "last_checked": "2026-01-17T08:46:50.306151",
+      "status": "FAILED",
+      "issues": [
+        "Syntax Error: unexpected indent (<unknown>, line 1)"
+      ]
+    },
+    "quiz_274_Hindex.py": {
+      "last_checked": "2026-01-17T20:37:49.779149",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['hIndex']"
+      ]
+    },
+    "quiz_2787_numberofWays.py": {
+      "last_checked": "2026-01-18T05:55:00.247676",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['numberOfWays']"
+      ]
+    },
+    "quiz_2845_count_interestingSubarray.py": {
+      "last_checked": "2026-01-18T08:38:09.783650"
     }
   }
 }
