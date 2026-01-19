@@ -1,5 +1,5 @@
 {
-  "next_index": 30,
+  "next_index": 31,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -150,6 +150,13 @@
     },
     "quiz_2845_count_interestingSubarray.py": {
       "last_checked": "2026-01-18T08:38:09.783650"
+    },
+    "quiz_29_devide_twoInterger.py": {
+      "last_checked": "2026-01-18T17:55:00.288128",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['divide']"
+      ]
     }
   }
 }
