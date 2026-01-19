@@ -1,5 +1,5 @@
 {
-  "next_index": 31,
+  "next_index": 32,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -156,6 +156,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['divide']"
+      ]
+    },
+    "quiz_304_rangeSumQuery.py": {
+      "last_checked": "2026-01-19T14:09:23.334759",
+      "status": "FAILED",
+      "issues": [
+        "No 'Solution' class found"
       ]
     }
   }
