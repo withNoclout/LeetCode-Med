@@ -1,5 +1,5 @@
 {
-  "next_index": 32,
+  "next_index": 38,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -163,6 +163,48 @@
       "status": "FAILED",
       "issues": [
         "No 'Solution' class found"
+      ]
+    },
+    "quiz_307_rangeSumQuery.py": {
+      "last_checked": "2026-01-20T02:10:20.148123",
+      "status": "FAILED",
+      "issues": [
+        "No 'Solution' class found"
+      ]
+    },
+    "quiz_310_maximumHighTree.py": {
+      "last_checked": "2026-01-20T04:53:49.588791",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['findMinHeightTrees']"
+      ]
+    },
+    "quiz_318_maxproduct.py": {
+      "last_checked": "2026-01-21T01:47:58.955908",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['maxProduct']"
+      ]
+    },
+    "quiz_3195_minimumarea.py": {
+      "last_checked": "2026-01-21T04:32:08.325366",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['minimumArea']"
+      ]
+    },
+    "quiz_319_bulbswtitch.py": {
+      "last_checked": "2026-01-21T13:47:59.001068",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['bulbSwitch']"
+      ]
+    },
+    "quiz_31_nextpermutation.py": {
+      "last_checked": "2026-01-21T16:32:38.351693",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['nextPermutation']"
       ]
     }
   }
