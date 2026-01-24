@@ -1,5 +1,5 @@
 {
-  "next_index": 38,
+  "next_index": 41,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -205,6 +205,27 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['nextPermutation']"
+      ]
+    },
+    "quiz_322_coinchange.py": {
+      "last_checked": "2026-01-23T02:50:40.301611",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['coinChange']"
+      ]
+    },
+    "quiz_328_oddevenLinklist.py": {
+      "last_checked": "2026-01-23T05:35:49.594820",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['oddEvenList']"
+      ]
+    },
+    "quiz_334_isValidSerialization.py": {
+      "last_checked": "2026-01-23T15:04:19.662203",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['increasingTriplet']"
       ]
     }
   }
