@@ -1,5 +1,5 @@
 {
-  "next_index": 41,
+  "next_index": 42,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -227,6 +227,9 @@
       "issues": [
         "Method names don't match filename. Methods: ['increasingTriplet']"
       ]
+    },
+    "quiz_33_search_inrotate_sortarray.py": {
+      "last_checked": "2026-01-24T01:38:37.982997"
     }
   }
 }

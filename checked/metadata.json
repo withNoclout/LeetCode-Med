@@ -1,5 +1,24 @@
 [
   {
+    "original": "quiz_33_search_inrotate_sortarray.py",
+    "moved_to": "checked/quiz_33_search_inrotate_sortarray.py",
+    "checked_at": "2026-01-24T01:38:37.982997",
+    "methods": [
+      "search"
+    ],
+    "name_ok": true,
+    "validation": {
+      "filename_valid": true,
+      "has_solution_class": true,
+      "method_names_match": true,
+      "has_docstrings": false,
+      "has_type_hints": false,
+      "code_length_ok": true,
+      "issues": []
+    },
+    "status": "PASSED"
+  },
+  {
     "original": "quiz_2845_count_interestingSubarray.py",
     "moved_to": "checked/quiz_2845_count_interestingSubarray.py",
     "checked_at": "2026-01-18T08:38:09.783650",
