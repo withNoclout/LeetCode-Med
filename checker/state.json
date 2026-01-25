@@ -1,5 +1,5 @@
 {
-  "next_index": 42,
+  "next_index": 44,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -230,6 +230,20 @@
     },
     "quiz_33_search_inrotate_sortarray.py": {
       "last_checked": "2026-01-24T01:38:37.982997"
+    },
+    "quiz_343_intergerBreak.py": {
+      "last_checked": "2026-01-24T10:52:48.784262",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['integerBreak']"
+      ]
+    },
+    "quiz_3479_fruitIntoBasket.py": {
+      "last_checked": "2026-01-24T13:38:57.987577",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['numOfUnplacedFruits']"
+      ]
     }
   }
 }
