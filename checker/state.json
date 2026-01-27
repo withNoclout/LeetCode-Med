@@ -1,5 +1,5 @@
 {
-  "next_index": 44,
+  "next_index": 45,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -243,6 +243,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['numOfUnplacedFruits']"
+      ]
+    },
+    "quiz_34_findFirstAndLastArrayinsorted.py": {
+      "last_checked": "2026-01-26T19:07:44.022598",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['searchRange']"
       ]
     }
   }
