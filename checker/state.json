@@ -1,5 +1,5 @@
 {
-  "next_index": 45,
+  "next_index": 46,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -250,6 +250,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['searchRange']"
+      ]
+    },
+    "quiz_355_designTwitter.py": {
+      "last_checked": "2026-01-27T10:52:57.396048",
+      "status": "FAILED",
+      "issues": [
+        "No 'Solution' class found"
       ]
     }
   }
