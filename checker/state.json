@@ -1,5 +1,5 @@
 {
-  "next_index": 47,
+  "next_index": 50,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -264,6 +264,20 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['largestDivisibleSubset']"
+      ]
+    },
+    "quiz_36_calidSoduku.py": {
+      "last_checked": "2026-01-28T06:32:22.051778",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['isValidSudoku']"
+      ]
+    },
+    "quiz_371_sumoftwodigit.py": {
+      "last_checked": "2026-01-31T01:53:38.543009",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['getSum']"
       ]
     }
   }
