@@ -1,5 +1,5 @@
 {
-  "next_index": 50,
+  "next_index": 51,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -278,6 +278,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['getSum']"
+      ]
+    },
+    "quiz_375_guessthehighernumberorlowernumber.py": {
+      "last_checked": "2026-02-02T16:13:16.343498",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['getMoneyAmount']"
       ]
     }
   }
