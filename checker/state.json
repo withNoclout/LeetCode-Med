@@ -1,5 +1,5 @@
 {
-  "next_index": 51,
+  "next_index": 52,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -285,6 +285,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['getMoneyAmount']"
+      ]
+    },
+    "quiz_376_sigglesequence.py": {
+      "last_checked": "2026-02-03T18:52:02.146714",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['wiggleMaxLength']"
       ]
     }
   }
