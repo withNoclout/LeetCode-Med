@@ -1,5 +1,5 @@
 {
-  "next_index": 52,
+  "next_index": 53,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -292,6 +292,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['wiggleMaxLength']"
+      ]
+    },
+    "quiz_377_combinationSumIV.py": {
+      "last_checked": "2026-02-05T10:21:49.104691",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['combinationSum4']"
       ]
     }
   }
