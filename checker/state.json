@@ -1,5 +1,5 @@
 {
-  "next_index": 57,
+  "next_index": 58,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -327,6 +327,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['rotateRight']"
+      ]
+    },
+    "quiz_71_simplifyPath.py": {
+      "last_checked": "2026-02-09T17:25:01.628706",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['simplifyPath']"
       ]
     }
   }
