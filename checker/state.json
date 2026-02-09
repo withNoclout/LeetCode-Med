@@ -1,5 +1,5 @@
 {
-  "next_index": 53,
+  "next_index": 57,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -299,6 +299,34 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['combinationSum4']"
+      ]
+    },
+    "quiz_390_lastremaining.py": {
+      "last_checked": "2026-02-07T09:37:33.261013",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['lastRemaining']"
+      ]
+    },
+    "quiz_53_maximumarray.py": {
+      "last_checked": "2026-02-08T01:37:49.997756",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['maxSubArray']"
+      ]
+    },
+    "quiz_54_spiralmatrix.py": {
+      "last_checked": "2026-02-08T13:38:39.686935",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['spiralOrder']"
+      ]
+    },
+    "quiz_61_rotaetRight.py": {
+      "last_checked": "2026-02-09T01:38:50.004711",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['rotateRight']"
       ]
     }
   }
