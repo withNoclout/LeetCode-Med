@@ -1,5 +1,5 @@
 {
-  "next_index": 59,
+  "next_index": 61,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -341,6 +341,20 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['minDistance']"
+      ]
+    },
+    "quiz_79_findWordExist.py": {
+      "last_checked": "2026-02-11T12:44:39.994520",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['exist']"
+      ]
+    },
+    "quiz_808_soupServing.py": {
+      "last_checked": "2026-02-12T22:58:52.307365",
+      "status": "FAILED",
+      "issues": [
+        "Syntax Error: unmatched ')' (<unknown>, line 20)"
       ]
     }
   }
