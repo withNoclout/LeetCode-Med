@@ -1,5 +1,5 @@
 {
-  "next_index": 61,
+  "next_index": 64,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -355,6 +355,27 @@
       "status": "FAILED",
       "issues": [
         "Syntax Error: unmatched ')' (<unknown>, line 20)"
+      ]
+    },
+    "quiz_80_removeDuplicate.py": {
+      "last_checked": "2026-02-13T10:34:55.605376",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['removeDuplicates']"
+      ]
+    },
+    "quiz_81_searchInRotatesort.py": {
+      "last_checked": "2026-02-13T19:12:42.582989",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['search']"
+      ]
+    },
+    "quiz_82_deleteDupliate.py": {
+      "last_checked": "2026-02-14T07:13:10.335271",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['deleteDuplicates']"
       ]
     }
   }
