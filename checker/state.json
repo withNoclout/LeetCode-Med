@@ -1,5 +1,5 @@
 {
-  "next_index": 64,
+  "next_index": 66,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -376,6 +376,20 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['deleteDuplicates']"
+      ]
+    },
+    "quiz_90_subsetwithDuplicate.py": {
+      "last_checked": "2026-02-14T19:45:43.904756",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['subsetsWithDup']"
+      ]
+    },
+    "quiz_91_numdecoding.py": {
+      "last_checked": "2026-02-15T07:45:53.870698",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['numDecodings']"
       ]
     }
   }
