@@ -1,5 +1,5 @@
 {
-  "next_index": 66,
+  "next_index": 68,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -390,6 +390,20 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['numDecodings']"
+      ]
+    },
+    "quiz_92_reversalLinklist.py": {
+      "last_checked": "2026-02-16T01:46:26.770845",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['reverseBetween']"
+      ]
+    },
+    "quiz_95_uniqueBinarySearchTree.py": {
+      "last_checked": "2026-02-17T05:49:43.341404",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['generateTrees']"
       ]
     }
   }
