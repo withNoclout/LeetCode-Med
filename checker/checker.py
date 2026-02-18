@@ -32,7 +32,7 @@ CHECKED_DIR = ROOT / "checked"
 STATE_FILE = Path(__file__).resolve().parents[0] / "state.json"
 METADATA_FILE = CHECKED_DIR / "metadata.json"
 ENV_FILE = Path(__file__).resolve().parents[0] / ".env"
-INTERVAL_HOURS = 12
+INTERVAL_HOURS = 6
 
 
 def load_env():

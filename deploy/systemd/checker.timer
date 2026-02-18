@@ -3,7 +3,7 @@ Description=Run LeetCode-Med checker every 12 hours
 
 [Timer]
 OnBootSec=10min
-OnUnitActiveSec=12h
+OnUnitActiveSec=6h
 Persistent=true
 
 [Install]
