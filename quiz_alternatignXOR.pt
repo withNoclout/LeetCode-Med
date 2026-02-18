@@ -1,0 +1,53 @@
+class Solution(object):
+    def alternatingXOR(self, nums, target1, target2):
+        """
+        :type nums: List[int]
+        :type target1: int
+        :type target2: int
+        :rtype: int
+        """
+        from collections import defaultdict
+
+        MOD = 10**9 + 7
+        
+        # cnt1[val] stores the total number of valid ways to partition a prefix
+        # such that the last block has XOR sum 'target1' and the prefix XOR is 'val'.
+        cnt1 = defaultdict(int)
+        
+        # cnt2[val] stores the total number of valid ways to partition a prefix
+        # such that the last block has XOR sum 'target2' and the prefix XOR is 'val'.
+        cnt2 = defaultdict(int)
+        
+        # Base Case:
+        # A valid partition must start with 'target1'. This implies the "previous" 
+        # block (the virtual one before the array starts) must be considered 'target2'.
+        # The prefix XOR before starting is 0.
+        cnt2[0] = 1
+        
+        curr_xor = 0
+        ans = 0
+        
+        for x in nums:
+            curr_xor ^= x
+            
+            # 1. Try to form a block ending here with XOR sum == target1.
+            # We need a previous state with prefix XOR 'prev' such that: curr_xor ^ prev == target1
+            # Therefore: prev = curr_xor ^ target1.
+            # This previous state must have ended with a 'target2' block.
+            ways_t1 = cnt2[curr_xor ^ target1]
+            
+            # 2. Try to form a block ending here with XOR sum == target2.
+            # We need a previous state with prefix XOR 'prev' such that: curr_xor ^ prev == target2
+            # Therefore: prev = curr_xor ^ target2.
+            # This previous state must have ended with a 'target1' block.
+            ways_t2 = cnt1[curr_xor ^ target2]
+            
+            # Update the DP states for the current prefix XOR
+            cnt1[curr_xor] = (cnt1[curr_xor] + ways_t1) % MOD
+            cnt2[curr_xor] = (cnt2[curr_xor] + ways_t2) % MOD
+            
+            # The number of valid partitions for the prefix ending at the current element
+            # is the sum of ways ending in either target1 or target2.
+            ans = (ways_t1 + ways_t2) % MOD
+            
+        return ans
