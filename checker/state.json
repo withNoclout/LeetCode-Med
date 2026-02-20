@@ -1,5 +1,5 @@
 {
-  "next_index": 70,
+  "next_index": 71,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -418,6 +418,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['numTrees']"
+      ]
+    },
+    "quiz_97_isInterleave.py": {
+      "last_checked": "2026-02-19T15:54:01.364923",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['isInterleave']"
       ]
     }
   }
