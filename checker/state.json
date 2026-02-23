@@ -1,5 +1,5 @@
 {
-  "next_index": 72,
+  "next_index": 73,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -432,6 +432,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['isValidBST']"
+      ]
+    },
+    "quiz_ATMmaachine.py": {
+      "last_checked": "2026-02-23T00:28:23.395293",
+      "status": "FAILED",
+      "issues": [
+        "No 'Solution' class found"
       ]
     }
   }
