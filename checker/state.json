@@ -1,5 +1,5 @@
 {
-  "next_index": 74,
+  "next_index": 77,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -446,6 +446,27 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['buildArray']"
+      ]
+    },
+    "quiz_ColorTRcker.py": {
+      "last_checked": "2026-02-25T09:24:20.510628",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['colorTheArray']"
+      ]
+    },
+    "quiz_CountDistrict.py": {
+      "last_checked": "2026-02-25T22:59:52.773928",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['countDistinct']"
+      ]
+    },
+    "quiz_CountPaths.py": {
+      "last_checked": "2026-02-26T22:18:12.560949",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['countPaths']"
       ]
     }
   }
