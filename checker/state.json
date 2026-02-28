@@ -1,5 +1,5 @@
 {
-  "next_index": 77,
+  "next_index": 79,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -467,6 +467,20 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['countPaths']"
+      ]
+    },
+    "quiz_CountRactengle.py": {
+      "last_checked": "2026-02-27T17:01:43.109134",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['countRectangles']"
+      ]
+    },
+    "quiz_DesignBrowserHistory.py": {
+      "last_checked": "2026-02-28T13:41:42.744261",
+      "status": "FAILED",
+      "issues": [
+        "No 'Solution' class found"
       ]
     }
   }
