@@ -1,5 +1,5 @@
 {
-  "next_index": 79,
+  "next_index": 81,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -481,6 +481,20 @@
       "status": "FAILED",
       "issues": [
         "No 'Solution' class found"
+      ]
+    },
+    "quiz_FindallGroupofFarmlanad.py": {
+      "last_checked": "2026-03-01T09:03:19.650386",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['findFarmland']"
+      ]
+    },
+    "quiz_HTMLEntityPrser.py": {
+      "last_checked": "2026-03-01T21:03:46.406151",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['entityParser']"
       ]
     }
   }
