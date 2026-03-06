@@ -1,5 +1,24 @@
 [
   {
+    "original": "quiz_NTH_digits.py",
+    "moved_to": "checked/quiz_NTH_digits.py",
+    "checked_at": "2026-03-06T02:19:41.839083",
+    "methods": [
+      "findNthDigit"
+    ],
+    "name_ok": true,
+    "validation": {
+      "filename_valid": true,
+      "has_solution_class": true,
+      "method_names_match": true,
+      "has_docstrings": true,
+      "has_type_hints": false,
+      "code_length_ok": true,
+      "issues": []
+    },
+    "status": "PASSED"
+  },
+  {
     "original": "quiz_33_search_inrotate_sortarray.py",
     "moved_to": "checked/quiz_33_search_inrotate_sortarray.py",
     "checked_at": "2026-01-24T01:38:37.982997",

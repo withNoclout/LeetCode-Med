@@ -1,5 +1,5 @@
 {
-  "next_index": 85,
+  "next_index": 87,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -524,6 +524,16 @@
       "issues": [
         "No 'Solution' class found"
       ]
+    },
+    "quiz_MinAnagramLength.py": {
+      "last_checked": "2026-03-05T11:00:12.908367",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['minAnagramLength']"
+      ]
+    },
+    "quiz_NTH_digits.py": {
+      "last_checked": "2026-03-06T02:19:41.839083"
     }
   }
 }
