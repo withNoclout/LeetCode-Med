@@ -1,5 +1,5 @@
 {
-  "next_index": 90,
+  "next_index": 91,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -554,6 +554,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['subarrayLCM']"
+      ]
+    },
+    "quiz_Subrectangle.py": {
+      "last_checked": "2026-03-08T16:11:42.650007",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['minSumOfLengths']"
       ]
     }
   }
