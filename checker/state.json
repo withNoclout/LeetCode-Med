@@ -1,5 +1,5 @@
 {
-  "next_index": 93,
+  "next_index": 94,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -575,6 +575,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['sumGame']"
+      ]
+    },
+    "quiz_Trapwater.py": {
+      "last_checked": "2026-03-12T04:02:17.863171",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['trapRainWater']"
       ]
     }
   }
