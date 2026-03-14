@@ -1,5 +1,5 @@
 {
-  "next_index": 94,
+  "next_index": 95,
   "files": {
     "Quiz_01_lasttimeCachBus.py": {
       "last_checked": "2026-01-02T18:17:55.801370"
@@ -582,6 +582,13 @@
       "status": "FAILED",
       "issues": [
         "Method names don't match filename. Methods: ['trapRainWater']"
+      ]
+    },
+    "quiz_UniqueXORtripple.py": {
+      "last_checked": "2026-03-13T10:51:27.856857",
+      "status": "FAILED",
+      "issues": [
+        "Method names don't match filename. Methods: ['gcd', 'uniqueXorTriplets']"
       ]
     }
   }
